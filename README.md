@@ -1,4 +1,4 @@
-Bioinformatics_Algorithms_Part1
+Bioinformatics Algorithms Part1
 ===============================
 
 Algorithms used for solving "CODE CHALLENGE"s of a course named "Bioinformatics Algorithms (Part 1)" provided by San 
