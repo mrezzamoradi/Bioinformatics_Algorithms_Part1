@@ -3,12 +3,11 @@ __author__ = 'Reza Moradi'
 # This code counts the number of times that a k-mer Pattern appears as a substring of Text
 #
 # Sample Input:
-# GCGCG
-# GCG
+#   GCGCG
+#   GCG
 #
-
 # Sample Output:
-# 2
+#   2
 
 text = input("Enter text: ").upper()
 pattern = input("Enter pattern: ").upper()

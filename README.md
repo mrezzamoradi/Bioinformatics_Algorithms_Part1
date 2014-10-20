@@ -4,6 +4,14 @@ Bioinformatics Algorithms Part1
 Algorithms used for solving "CODE CHALLENGE"s of a course named "Bioinformatics Algorithms (Part 1)" provided by San 
 Diego university on Coursera.org
 
+Coursera Honour Code Attention:
+-------------------------------
+
+If you are currently participating in the course, please don not use these codes to solve your CODE CHALLENGE 
+assignments. Using codes for that purpose is clearly violation of the Coursera Honour Code and besides, why bother
+yourself with a challenge you don't want to learn from?!
+
+
 Auther:
 -------
 
