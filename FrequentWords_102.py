@@ -1,48 +1,56 @@
 __author__ = 'Reza Moradi'
 
-# This code finds the most frequent k-mers in a string
-#
-# Sample Input:
-#   ACGTTGCATGTCGCATGATGCATGAGAGCT          (string)
-#   4                                       (k)
-# 
-# Sample Output:
-#   CATG GCAT
+input_text = input("Enter text: ").upper()
+input_k = int(input("Enter k: "))
 
-text = input("Enter text: ").upper()
-k = int(input("Enter k: "))
 
-# All possible k-mers with their frequency will be stored in this set:
-kmers = {}
+def frequent_words(text, k):
 
-# Frequency of most frequent k-mer:
-maxFreq = 0
+    """
+    This function finds the most frequent k-mers in a text
 
-# Most frequent k-mers will be stored in this list:
-maxKmers = []
+    Sample Input:
+    text: ACGTTGCATGTCGCATGATGCATGAGAGCT
+    k: 4
 
-for i in range(len(text) - k + 1):
-    # Creating a k-mer
-    subText = text[i:i + k]
+    Sample Output:
+    CATG GCAT
+    """
 
-    # Updating 'kmers' database for 'subText'
-    if subText not in kmers:
-        kmers[subText] = 1
+    # All possible k-mers with their frequency will be stored in this set:
+    kmers = {}
 
-    else:
-        kmers[subText] += 1
+    # Frequency of most frequent k-mer:
+    max_freq = 0
 
-    # Checking if 'subText' is more frequent than k-mers in 'maxKmers'. If so, replace 'subText' with all
-    # those kmers. If 'subText' is as frequent as those k-mers, add it to the list.
-    freq = kmers[subText]
+    # Most frequent k-mers will be stored in this list:
+    max_kmers = []
 
-    if freq > maxFreq:
-        del maxKmers[:]
-        maxFreq = freq
-        maxKmers.append(subText)
+    for i in range(len(text) - k + 1):
+        # Creating a k-mer
+        sub_text = text[i:i + k]
 
-    elif freq == maxFreq:
-        maxKmers.append(subText)
+        # Updating 'kmers' database for 'sub_text'
+        if sub_text not in kmers:
+            kmers[sub_text] = 1
 
-maxKmers.sort()
-print("\nThe result is: ", " ".join(maxKmers))
+        else:
+            kmers[sub_text] += 1
+
+        # Checking if 'sub_text' is more frequent than k-mers in 'max_kmers'. If so, replace 'sub_text' with all
+        # those kmers. If 'sub_text' is as frequent as those k-mers, add it to the list.
+        freq = kmers[sub_text]
+
+        if freq > max_freq:
+            del max_kmers[:]
+            max_freq = freq
+            max_kmers.append(sub_text)
+
+        elif freq == max_freq:
+            max_kmers.append(sub_text)
+
+    max_kmers.sort()
+
+    return max_kmers
+
+print("\nThe result is:", " ".join(frequent_words(input_text, input_k)))

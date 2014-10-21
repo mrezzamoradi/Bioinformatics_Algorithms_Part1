@@ -4,15 +4,15 @@ Bioinformatics Algorithms Part1
 Algorithms used for solving "CODE CHALLENGE"s of a course named "Bioinformatics Algorithms (Part 1)" provided by San 
 Diego university on Coursera.org
 
-Coursera Honour Code Attention:
+Coursera Honor Code Attention:
 -------------------------------
 
 If you are currently participating in the course, please don not use these codes to solve your CODE CHALLENGE 
-assignments. Using codes for that purpose is clearly violation of the Coursera Honour Code and besides, why bother
+assignments. Using codes for that purpose is clearly violation of the Coursera Honor Code and besides, why bother
 yourself with a challenge you don't want to learn from?!
 
 
-Auther:
+Author:
 -------
 
 This project is started by Reza Moradi. Everybody who has/had participated in the course or is interested in optimizing 
@@ -21,7 +21,7 @@ some Bioinformatics-related code is welcomed.
 Main Objective:
 ---------------
 
-Our main goal is to make codes as efficient as possible. Mostly we know the possible best-case for a code, but sometimes 
+Our main goal is to make the codes as efficient as possible. Mostly we know the possible best-case for a code, but sometimes 
 we must find out.
 
 Programming Languages:

@@ -1,22 +1,29 @@
 __author__ = 'Reza Moradi'
 
-# This code counts the number of times that a k-mer Pattern appears as a substring of Text
-#
-# Sample Input:
-#   GCGCG
-#   GCG
-#
-# Sample Output:
-#   2
+input_text = input("Enter text: ").upper()
+input_pattern = input("Enter pattern: ").upper()
 
-text = input("Enter text: ").upper()
-pattern = input("Enter pattern: ").upper()
 
-counter = 0
-k = len(pattern)
+def pattern_count(text, pattern):
 
-for i in range(len(text) - k + 1):
-    if text[i:i + k] == pattern:
-        counter += 1
+    """
+    This function counts the number of times that a k-mer 'pattern' appears as a substring of 'text'
 
-print("\nThe result is: ", counter)
+    Sample Input:
+    text: GCGCG
+    pattern: GCG
+
+    Sample Output:
+    2
+    """
+
+    counter = 0
+    k = len(pattern)
+
+    for i in range(len(text) - k + 1):
+        if text[i:i + k] == pattern:
+            counter += 1
+
+    return counter
+
+print("\nThe result is: ", pattern_count(input_text, input_pattern))
