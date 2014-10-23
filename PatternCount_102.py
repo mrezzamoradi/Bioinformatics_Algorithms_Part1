@@ -1,13 +1,15 @@
 __author__ = 'Reza Moradi'
 
-input_text = input("Enter text: ").upper()
-input_pattern = input("Enter pattern: ").upper()
-
 
 def pattern_count(text, pattern):
 
     """
     This function counts the number of times that a k-mer 'pattern' appears as a substring of 'text'
+
+    :param str text:
+    :param str pattern:
+    :return:
+    :rtype: int
 
     Sample Input:
     text: GCGCG
@@ -25,5 +27,8 @@ def pattern_count(text, pattern):
             counter += 1
 
     return counter
+
+input_text = input("Enter text: ").upper()
+input_pattern = input("Enter pattern: ").upper()
 
 print("\nThe result is: ", pattern_count(input_text, input_pattern))

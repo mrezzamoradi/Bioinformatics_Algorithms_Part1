@@ -3,7 +3,14 @@ __author__ = 'Reza Moradi'
 
 def pattern_to_number(pattern):
 
-    """ Transform a k-mer 'pattern' into an integer between 0 and 4^k − 1, where k is length of 'pattern' """
+    """
+    Transform a k-mer 'pattern' into an integer between 0 and 4^k − 1, where k is length of 'pattern'
+
+    :param str pattern:
+    :type pattern: str
+    :return:
+    :rtype: int
+    """
 
     # Disassemble the 'pattern'
     pattern_nucleotides = list(pattern.upper())

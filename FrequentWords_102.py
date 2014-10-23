@@ -1,13 +1,15 @@
 __author__ = 'Reza Moradi'
 
-input_text = input("Enter text: ").upper()
-input_k = int(input("Enter k: "))
-
 
 def frequent_words(text, k):
 
     """
     This function finds the most frequent k-mers in a text
+
+    :param str text:
+    :param int k:
+    :return:
+    :rtype: list
 
     Sample Input:
     text: ACGTTGCATGTCGCATGATGCATGAGAGCT
@@ -21,36 +23,39 @@ def frequent_words(text, k):
     kmers = {}
 
     # Frequency of most frequent k-mer:
-    max_freq = 0
+    max_frequency = 0
 
     # Most frequent k-mers will be stored in this list:
-    max_kmers = []
+    frequent_kmers = []
 
     for i in range(len(text) - k + 1):
         # Creating a k-mer
-        sub_text = text[i:i + k]
+        kmer = text[i:i + k]
 
-        # Updating 'kmers' database for 'sub_text'
-        if sub_text not in kmers:
-            kmers[sub_text] = 1
+        # Updating 'kmers' database for 'kmer'
+        if kmer not in kmers:
+            kmers[kmer] = 1
 
         else:
-            kmers[sub_text] += 1
+            kmers[kmer] += 1
 
-        # Checking if 'sub_text' is more frequent than k-mers in 'max_kmers'. If so, replace 'sub_text' with all
-        # those kmers. If 'sub_text' is as frequent as those k-mers, add it to the list.
-        freq = kmers[sub_text]
+        # Checking if 'kmer' is more frequent than k-mers in 'frequent_kmers'. If so, replace 'kmer' with all
+        # those kmers. If 'kmer' is as frequent as those k-mers, add it to the list.
+        frequency = kmers[kmer]
 
-        if freq > max_freq:
-            del max_kmers[:]
-            max_freq = freq
-            max_kmers.append(sub_text)
+        if frequency > max_frequency:
+            del frequent_kmers[:]
+            max_frequency = frequency
+            frequent_kmers.append(kmer)
 
-        elif freq == max_freq:
-            max_kmers.append(sub_text)
+        elif frequency == max_frequency:
+            frequent_kmers.append(kmer)
 
-    max_kmers.sort()
+    frequent_kmers.sort()
 
-    return max_kmers
+    return frequent_kmers
+
+input_text = input("Enter text: ").upper()
+input_k = int(input("Enter k: "))
 
 print("\nThe result is:", " ".join(frequent_words(input_text, input_k)))

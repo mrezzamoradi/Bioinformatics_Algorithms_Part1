@@ -35,4 +35,7 @@ Details:
 * <b>File-name</b> format may be <i>name_xyy</i> where <i>name</i> is what that code is referred to, in the textbook 
 (https://stepic.org/course/Bioinformatics-Algorithms-61/syllabus); <i>x</i> is chapter number and <i>yy</i> is section
 number of the textbook where the code implementation is mentioned. For example <i>PatternCount()</i> is defined in 
-<i>1.2 Hidden Messages in the Replication Origin</i>, so the file-name for the code would be <i>PatternCount_102</i>
+<i>1.2 Hidden Messages in the Replication Origin</i>, so the file-name for the code would be <i>PatternCount_102</i>.
+
+
+* We do not essentially use pseudo codes provided in the textbook to solve the problems. 
