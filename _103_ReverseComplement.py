@@ -28,7 +28,3 @@ def reverse_complement(pattern):
     rev_comp_pattern = [complement_nucleotides[nucleotide] for nucleotide in pattern_nucleotides]
 
     return "".join(rev_comp_pattern)
-
-input_pattern = input("Enter pattern: ").upper()
-
-print(reverse_complement(input_pattern))

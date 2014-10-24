@@ -1,7 +1,7 @@
 __author__ = 'Reza Moradi'
 
-import ComputingFrequencies_111
-import NumberToPattern_111
+import _111_ComputingFrequencies
+import _111_NumberToPattern
 
 
 def faster_frequent_words(text, k):
@@ -21,14 +21,14 @@ def faster_frequent_words(text, k):
     Sample Output:
     CATG GCAT
 
-    P.S. In practice, this function was not faster than 'frequent_words' function in 'FrequentWords_102.py' as
+    P.S. In practice, this function was not faster than 'frequent_words' function in '_102_FrequentWords.py' as
     the name of the function suggests. I uploaded it because it uses a different method to solve the problem of
     finding frequent words and I think it has a potential to get optimized and faster than the 'frequent_words'
     function.
     - Reza Moradi
     """
 
-    frequency_array = ComputingFrequencies_111.computing_frequencies(text, k)
+    frequency_array = _111_ComputingFrequencies.computing_frequencies(text, k)
 
     # Frequency of most frequent k-mer
     max_frequency = max(frequency_array)
@@ -37,7 +37,7 @@ def faster_frequent_words(text, k):
     frequent_kmers_indices = [i for i, frequency in enumerate(frequency_array) if frequency == max_frequency]
 
     # Converting indices into corresponding k-mers
-    frequent_kmers = [NumberToPattern_111.number_to_pattern(index, k) for index in frequent_kmers_indices]
+    frequent_kmers = [_111_NumberToPattern.number_to_pattern(index, k) for index in frequent_kmers_indices]
 
     return frequent_kmers
 

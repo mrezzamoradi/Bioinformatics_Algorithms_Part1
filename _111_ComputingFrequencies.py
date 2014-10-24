@@ -1,6 +1,6 @@
 __author__ = 'Reza Moradi'
 
-import PatternToNumber_111
+import _111_PatternToNumber
 
 
 def computing_frequencies(text, k):
@@ -37,7 +37,7 @@ def computing_frequencies(text, k):
 
     # For the first k-mer
     kmer = text[:k]
-    this_kmer_number = PatternToNumber_111.pattern_to_number(kmer)
+    this_kmer_number = _111_PatternToNumber.pattern_to_number(kmer)
     frequency_array[this_kmer_number] += 1
 
     # For next k-mers

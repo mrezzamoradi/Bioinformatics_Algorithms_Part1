@@ -1,7 +1,7 @@
-__author__ = 'Reza'
+__author__ = 'Reza Moradi'
 
 
-def clump_finding(text, k, L , t):
+def clump_finding(text, k, L, t):
 
     """
     We defined a k-mer as a "clump" if it appears many times within a short interval of 'text'. More formally,
@@ -49,4 +49,4 @@ def clump_finding(text, k, L , t):
 input_text = input()
 input_k, input_L, input_t = map(int, input().split(' '))
 
-print(len(clump_finding(input_text, input_k, input_L, input_t)))
+print(clump_finding(input_text, input_k, input_L, input_t))
