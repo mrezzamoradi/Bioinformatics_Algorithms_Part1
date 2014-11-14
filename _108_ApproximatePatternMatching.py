@@ -27,3 +27,11 @@ def approximate_pattern_matching(pattern, text, d):
     """
     k = len(pattern)
     return [i for i in range(len(text) - k + 1) if _108_HammingDistance.hamming_distance(text[i:i + k], pattern) <= d]
+
+if __name__ == "__main__":
+
+    pattern_ = input()
+    text_ = input()
+    d_ = int(input())
+
+    print(" ".join(map(str, approximate_pattern_matching(pattern_, text_, d_))))

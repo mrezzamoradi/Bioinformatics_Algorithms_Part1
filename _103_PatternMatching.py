@@ -24,7 +24,9 @@ def find_pattern(pattern, text):
     k = len(pattern)
     return [i for i in range(len(text) - k + 1) if text[i:i + k] == pattern]
 
-input_pattern = input("Enter pattern: ").upper()
-input_text = input("Enter text: ").upper()
+if __name__ == "__main__":
 
-print("\nThe result is:", " ".join(map(str, find_pattern(input_pattern, input_text))))
+    input_pattern = input("Enter pattern: ").upper()
+    input_text = input("Enter text: ").upper()
+
+    print("\nThe result is:", " ".join(map(str, find_pattern(input_pattern, input_text))))

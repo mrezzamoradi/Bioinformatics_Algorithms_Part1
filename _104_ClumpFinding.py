@@ -46,7 +46,9 @@ def clump_finding(text, k, L, t):
 
     return frequent_kmers
 
-input_text = input()
-input_k, input_L, input_t = map(int, input().split(' '))
+if __name__ == "__main__":
 
-print(clump_finding(input_text, input_k, input_L, input_t))
+    input_text = input()
+    input_k, input_L, input_t = map(int, input().split(' '))
+
+    print(clump_finding(input_text, input_k, input_L, input_t))

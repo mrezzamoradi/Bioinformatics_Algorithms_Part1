@@ -47,3 +47,10 @@ def computing_frequencies(text, k):
         frequency_array[this_kmer_number] += 1
 
     return frequency_array
+
+if __name__ == "__main__":
+
+    text_ = input()
+    k_ = int(input())
+
+    print(computing_frequencies(text_, k_))

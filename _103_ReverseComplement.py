@@ -28,3 +28,8 @@ def reverse_complement(pattern):
     rev_comp_pattern = [complement_nucleotides[nucleotide] for nucleotide in pattern_nucleotides]
 
     return "".join(rev_comp_pattern)
+
+if __name__ == "__main__":
+
+    pattern_ = input()
+    print(reverse_complement(pattern_))

@@ -22,3 +22,10 @@ def hamming_distance(text1, text2):
     """
 
     return sum([1 for i in range(len(text1)) if text1[i] != text2[i]])
+
+if __name__ == "__main__":
+
+    text1_ = input()
+    text2_ = input()
+
+    print(hamming_distance(text1_, text2_))

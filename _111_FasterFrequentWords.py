@@ -41,7 +41,9 @@ def faster_frequent_words(text, k):
 
     return frequent_kmers
 
-input_text = input("Enter text: ").upper()
-input_k = int(input("Enter k: "))
+if __name__ == "__main__":
 
-print("\nThe result is:", " ".join(faster_frequent_words(input_text, input_k)))
+    input_text = input("Enter text: ").upper()
+    input_k = int(input("Enter k: "))
+
+    print("\nThe result is:", " ".join(faster_frequent_words(input_text, input_k)))

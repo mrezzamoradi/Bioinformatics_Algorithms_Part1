@@ -111,7 +111,9 @@ def frequent_words_with_mismatch(text, k, d):
 
     return most_frequent_kmers
 
-in_text = input()
-in_k, in_d = map(int, input().split())
+if __name__ == "__main__":
 
-print(" ".join(frequent_words_with_mismatch(in_text, in_k, in_d)))
+    in_text = input()
+    in_k, in_d = map(int, input().split())
+
+    print(" ".join(frequent_words_with_mismatch(in_text, in_k, in_d)))

@@ -54,6 +54,8 @@ def skew(gnome):
 
     return minimum_location
 
-input_gnome = input("Enter the genome: ")
+if __name__ == "__main__":
 
-print(" ".join(map(str, skew(input_gnome))))
+    input_gnome = input("Enter the genome: ")
+
+    print(" ".join(map(str, skew(input_gnome))))

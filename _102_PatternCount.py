@@ -28,7 +28,9 @@ def pattern_count(text, pattern):
 
     return counter
 
-input_text = input("Enter text: ").upper()
-input_pattern = input("Enter pattern: ").upper()
+if __name__ == "__main__":
 
-print("\nThe result is: ", pattern_count(input_text, input_pattern))
+    input_text = input("Enter text: ").upper()
+    input_pattern = input("Enter pattern: ").upper()
+
+    print("\nThe result is: ", pattern_count(input_text, input_pattern))
