@@ -12,22 +12,12 @@ assignments. Using codes for that purpose is clearly violation of the Coursera H
 yourself with a challenge you don't want to learn from?!
 
 
-Author:
--------
-
-This project is started by Reza Moradi. Everybody who has/had participated in the course or is interested in optimizing 
-some Bioinformatics-related code is welcomed.
 
 Main Objective:
 ---------------
 
-Our main goal is to make the codes as efficient as possible. Mostly we know the possible best-case for a code, but sometimes 
-we must find out.
+My main goal is to solve the problems and learn python at the same time. Everybody who has/had participated in the course or is interested in optimizing some Bioinformatics-related code is welcomed.
 
-Programming Languages:
-----------------------
-
-Python 3 is recommended, but your code can be in any language.
 
 Details:
 --------
@@ -39,4 +29,4 @@ defined in <i>1.2 Hidden Messages in the Replication Origin</i>, so the file-nam
 "<i>_102_PatternCount</i>".
 
 
-* We do not essentially use pseudo codes provided in the textbook to solve the problems. 
+* I do not essentially use pseudo codes provided in the textbook to solve the problems. 
